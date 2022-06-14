@@ -1,17 +1,25 @@
 import _ from 'lodash';
 import './style.css';
-import Icon from './pizza_oven.png';
 
-function component() {
-    const element = document.createElement('div');
-
-    //Add the image to our existing div.
-    const myIcon = new Image();
-    myIcon.src = Icon;
-
-    element.appendChild(myIcon);
+function createFramework() {
+  // Create framework divs
+  const content = document.createElement('div');
+  const header = document.createElement('div');
+  const main = document.createElement('div');
+  const footer = document.createElement('div');
   
-    return element;
-  }
+  // Assign class to framework elements
+  content.classList.add('content');
+  header.classList.add('header');
+  main.classList.add('main');
+  footer.classList.add('footer');
+
+  // Add framework elements to content container
+  content.appendChild(header);
+  content.appendChild(main);
+  content.appendChild(footer);
   
-  document.body.appendChild(component());
+  return content;
+}
+  
+document.body.appendChild(createFramework());
