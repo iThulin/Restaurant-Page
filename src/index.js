@@ -1,4 +1,5 @@
-import { renderNavBar } from './navbar.js';
+import { renderFooter } from './modules/footer.js';
+import { renderNavBar } from './modules/navbar.js';
 import './style.css';
 
 // Creates an element to hold all the content of the webpage.
@@ -32,7 +33,7 @@ function home() {
   console.log('Render Home');
   renderNavBar();
   //render main
-  //render footer
+  renderFooter();
 }
 
 function menu() {
@@ -40,7 +41,7 @@ function menu() {
   console.log('Render Menu');
   renderNavBar();
   //render menu
-  //render footer
+  renderFooter();
 }
 
 function about() {
@@ -48,7 +49,7 @@ function about() {
   console.log('Render About');
   renderNavBar();
   //render about
-  //render footer
+  renderFooter();
 }
 
 

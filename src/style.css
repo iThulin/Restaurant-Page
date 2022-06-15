@@ -12,6 +12,29 @@
     font-style: normal;
 }
 
+p, a {
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: gold;
+}
+
+p {
+    padding-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+a:hover {
+    font-size: 1.25rem;
+    color: white;
+    border-bottom: 2px solid gold;
+    text-decoration: none;
+}
+
 body {
     margin: 0px;
     -ms-overflow-style: none;
@@ -25,7 +48,7 @@ body::-webkit-scrollbar {
 #frame {
     width: 100vw;
     height: auto;
-    min-height: 105vh;
+    min-height: 100vh;
     background: url('./pizza_oven.png');
     background-size: 100%;
     background-attachment: fixed;
@@ -79,7 +102,13 @@ ul {
 }
 
 #footer {
+    position: absolute;
+    bottom: 0px;
     width: 100vw;
-    height: 5vh;
-    background-color: black;
+    height: 10vh;
+    background-color: transparent;
+    border-top: 2px solid gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,4 +1,4 @@
-import {createHTMLElement, $frame} from './index.js';
+import {createHTMLElement, $frame} from '../index.js';
 
 function renderNavBar() {
     const navItems = ['HOME', 'MENU', 'ABOUT'];
