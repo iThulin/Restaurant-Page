@@ -16,7 +16,7 @@ p, a {
     font-family: 'Raleway';
     font-weight: 300;
     font-size: 1.25rem;
-    color: gold;
+    color: #E68E24;
 }
 
 p {
@@ -25,13 +25,13 @@ p {
 
 a {
     text-decoration: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #E7E9E6;
 }
 
 a:hover {
     font-size: 1.25rem;
     color: white;
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid #E68E24;
     text-decoration: none;
 }
 
@@ -49,9 +49,11 @@ body::-webkit-scrollbar {
     width: 100vw;
     height: auto;
     min-height: 100vh;
-    background: url('./pizza_oven.png');
-    background-size: 100%;
-    background-attachment: fixed;
+    background: url('./daniel-lee-Z1n3HzOejKc-unsplash.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -60,13 +62,13 @@ body::-webkit-scrollbar {
 
 #nav {
     width: 100vw;
-    height: 10vh;
+    height: 7.5vh;
     background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid #FEAE48;
 }
 
 ul {
@@ -80,16 +82,17 @@ ul {
     font-family: 'Raleway';
     src: url('./Raleway.ttf') format('truetype');
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
-    color: gold;
+    color: #E68E24;
     list-style-type: none;
     background-color: transparent;
     cursor: pointer;
+    border: none;
 }
 
 .navButton:hover {
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid #E68E24;
     color: white
 }
 
@@ -105,10 +108,17 @@ ul {
     position: absolute;
     bottom: 0px;
     width: 100vw;
-    height: 10vh;
+    height: 7.5vh;
     background-color: transparent;
-    border-top: 2px solid gold;
+    border-top: 2px solid #FEAE48;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
