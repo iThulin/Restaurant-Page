@@ -4,7 +4,7 @@ function renderMain() {
     const $mainContent = createHTMLElement('div', 'main')
 
     const $title = createHTMLElement('h1', 'title', null, 'Farina Alto')
-    const $subtitle = createHTMLElement('h2', 'subtitle', null, 'Pizzaria and Wine Bar')
+    const $subtitle = createHTMLElement('h2', 'subtitle', null, 'Pizzeria and Wine Bar')
 
     $mainContent.appendChild($title);
     $mainContent.appendChild($subtitle);

@@ -1,6 +1,7 @@
 import { renderFooter } from './modules/footer.js';
 import { renderNavBar } from './modules/navbar.js';
 import { renderMain } from './modules/main';
+import { renderMenu } from './modules/menu.js';
 import './style.css';
 
 // Creates an element to hold all the content of the webpage.
@@ -41,7 +42,7 @@ function menu() {
   removeAllChildNodes($frame);
   console.log('Render Menu');
   renderNavBar();
-  renderMain();
+  renderMenu();
   renderFooter();
 }
 

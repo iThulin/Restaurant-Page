@@ -1,0 +1,92 @@
+{
+    "Antipasti": [
+        {
+            "ID": "ARANCINI",
+            "price": 9,
+            "description": "fried stuffed rissoto balls, three cheeses, marinara"
+        },
+        {
+            "ID": "ANTIPASTO PLATTER",
+            "price": 21,
+            "description": "artichoke hearts, cured meats, olives, fresh mozzarella, calabreses peppers, basil, tomato, roasted peppers, grand padano"
+        },
+        {
+            "ID": "MEATBALLS AS FORNO BALSAMICO",
+            "price": 14,
+            "description": "sicilian style meatballs, balsamic reduction, raisins, pine nuts, butter, grilled bread"
+        },
+        {
+            "ID": "CALAMARI FRITTO",
+            "price": 15,
+            "description": "gluten free garbanzo flour, spicy marinara, basil aioli"
+        },
+        {
+            "ID": "FRIED ARTICHOKE HEARTS",
+            "price": 12,
+            "description": "beer batter, basil pest, lemon creme fraiche"
+        },
+        {
+            "ID": "PRINCE EDWARD ISLAND MUSSELS",
+            "price": 22,
+            "description": "calabrese peppers, san marzano tomato, white wien butter sauce, caper berries, spicy grilled bread"
+        },
+        {
+            "ID": "ORGANIc CHICKEN LIVER PATE",
+            "price": 11,
+            "description": "truffle oil, marsala, sage, grilled bread"
+        },
+        {
+            "ID": "MINESTRONE",
+            "price": 6,
+            "description": "veggie minestrone, grana padano, fresh parsley"
+        }
+    ],
+    "Pizza & Calzones": [
+        {
+            "ID": "MARGHERITA",
+            "half-price": 11,
+            "full-price": 17,
+            "description": "tomato sauce, mozzarella, org. fresh basil"
+        }, {
+            "ID": "MELANZANE",
+            "half-price": 12,
+            "full-price": 19,
+            "description": "eggplant, marinara, mozzarella, basil, oregano"
+        }, {
+            "ID": "FUNGHI",
+            "half-price": 14,
+            "full-price": 17,
+            "description": "mixed mushrooms, mozzarella, fontina, taleggio, shallot, thyme"
+        }, {
+            "ID": "BIANCA",
+            "half-price": 15,
+            "full-price": 23,
+            "description": "artichoke hearts, sage, mozzarella, ricotta, truffle oil"
+        }, {
+            "ID": "SALSICCIA",
+            "half-price": 15,
+            "full-price": 23,
+            "description": "sweet fennel sausage, roasted red onion, tomato sauce, mozzarella, provolone"
+        }, {
+            "ID": "CARNE",
+            "half-price": 15,
+            "full-price": 24,
+            "description": "pepperoni, prosciutto, salami, tomato sauce, mozzarella"
+        }, {
+            "ID": "FORMAGGIO DI CAPRA",
+            "half-price": 14,
+            "full-price": 23,
+            "description": "house cured pancetta made with local, grass-fed pork, mozzarella, farmhouse goat cheese, leeks scallions"
+        }, {
+            "ID": "NEW YORKER",
+            "half-price": 11,
+            "full-price": 18,
+            "description": "marinara, aged mozzarella, oregano"
+        }, {
+            "ID": "MEATBALL",
+            "half-price": 15,
+            "full-price": 22,
+            "description": "house-made meatballs, marinara, mozzarella, ricotta, org spinach, garlic"
+        }
+    ]
+}
