@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-.content {
+#frame {
     width: 100vw;
     height: auto;
     min-height: 105vh;
@@ -35,13 +35,42 @@ body::-webkit-scrollbar {
     align-items: center;
 }
 
-.header {
+#nav {
     width: 100vw;
-    height: 30vh;
-    background-color: green;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid gold;
 }
 
-.main {
+ul {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navButton {
+    font-family: 'Raleway';
+    src: url('./Raleway.ttf') format('truetype');
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: normal;
+    color: gold;
+    list-style-type: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.navButton:hover {
+    border-bottom: 2px solid gold;
+    color: white
+}
+
+#main {
     width: 50vw;
     height: 100%;
     min-height: 70vh;
@@ -49,7 +78,7 @@ body::-webkit-scrollbar {
     background-color: bisque;
 }
 
-.footer {
+#footer {
     width: 100vw;
     height: 5vh;
     background-color: black;
