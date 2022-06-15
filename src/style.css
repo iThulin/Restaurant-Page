@@ -33,6 +33,21 @@ h2 {
     margin: 0px;
 }
 
+h3 {
+    font-family: 'Raleway-Italic';
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0px;
+}
+
+h4 {
+    font-family: 'Raleway-Italic';
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0px;
+}
+
+
 p, a {
     font-family: 'Raleway';
     font-weight: 300;
@@ -151,11 +166,36 @@ ul {
     top: 8vh;
     left: 15%;
     width: 70%;
+    max-width: 70vw;
     height: 84vh;
-    overflow: hidden;
     background-color: #E7E9E6;
     border-top: 2px solid #FEAE48;
     border-bottom: 2px solid #FEAE48;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+#menuItemContainer {
+    width: 42.5vh;
+    height: 100px;
+    margin: 2.5%;
+}
+
+#subContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#price {
+    margin: 5px 10px 0px 10px;
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
+#menuDescription {
+    margin-top: 5px;
 }
 
 #footer {
