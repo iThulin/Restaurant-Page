@@ -2,6 +2,7 @@ import { renderFooter } from './modules/footer.js';
 import { renderNavBar } from './modules/navbar.js';
 import { renderMain } from './modules/main';
 import { renderMenu } from './modules/menu.js';
+import { renderAbout } from './modules/about.js';
 import './style.css';
 
 // Creates an element to hold all the content of the webpage.
@@ -50,12 +51,10 @@ function about() {
   removeAllChildNodes($frame);
   console.log('Render About');
   renderNavBar();
-  renderMain();
+  renderAbout();
   renderFooter();
 }
-
-
-
+// Load homepage on load
 home();
 document.addEventListener('click', (element) => {
   const target = element.target;
@@ -65,6 +64,4 @@ document.addEventListener('click', (element) => {
   if (target.id == 'ABOUT') about();
 });
 
-
-//document.body.appendChild(createFramework());
 export {createHTMLElement, $frame};
