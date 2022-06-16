@@ -3,67 +3,113 @@ import menuData from '../menuData.json';
 
 function renderMenu() {
     const menuItems = menuData;
-    console.log(menuItems)
 
-    // create menu container to hold all generated menu content
-
+    // Main divs
     const $menuContainer = createHTMLElement('div', 'menuContainer');
     const $menu = createHTMLElement('div', 'menu');
 
-    // create subMenuContainers to hold each type of food
-
-    const $antpastiContainer = createHTMLElement('div', 'subMenu');
+    // Containers for each type of food
+    $menu.appendChild(createHTMLElement('h2', 'subMenuTitle', null, 'ANTIPASTI'));
+    const $antpastiContainer = createHTMLElement('div', 'Antipasti', ['subMenu']);
     $menu.appendChild($antpastiContainer);
-    $antpastiContainer.appendChild(createHTMLElement('h2', 'subMenuTitle', null, 'ANTIPASTI'));
 
-    const $pizzaAndCalzonesContainer = createHTMLElement('div', 'subMenu');
+    $menu.appendChild(createHTMLElement('h2', 'subMenuTitle', null, 'INSALATA'));
+    const $insalataContainer = createHTMLElement('div', 'Insalata', ['subMenu']);
+    $menu.appendChild($insalataContainer);
+
+    $menu.appendChild(createHTMLElement('h2', 'subMenuTitle', null, 'PIZZA & CALZONES'))
+    const $pizzaAndCalzonesContainer = createHTMLElement('div', 'Pizza-Calzones', ['subMenu']);
     $menu.appendChild($pizzaAndCalzonesContainer);
-    $pizzaAndCalzonesContainer.appendChild(createHTMLElement('h2', 'subMenuTitle', null, 'PIZZA & CALZONES'))
 
+    $menu.appendChild(createHTMLElement('h2', 'subMenuTitle', null, 'Pasta & Primi'))
+    const $pastaAndPrimiContainer = createHTMLElement('div', 'Pasta-Primi', ['subMenu']);
+    $menu.appendChild($pastaAndPrimiContainer);
 
-
-    // loop through the json to create a header for each type of food
-
+    // Antipasti
     menuItems.Antipasti.forEach((category) => {
-        //create the container
-
+        // Menu item container
         const $menuItemContainer = createHTMLElement('div', 'menuItemContainer', ['antipasti']);
         $antpastiContainer.appendChild($menuItemContainer);
 
-        // create the title, price, and description
+        // Title
         $menuItemContainer.appendChild(createHTMLElement('h3', 'menuItem', null, category.ID));
 
+        // Price and Description
         const $subContainer = createHTMLElement('div', 'subContainer');
         $menuItemContainer.appendChild($subContainer)
 
         $subContainer.appendChild(createHTMLElement('h4', 'price', null, category.price));
         $subContainer.appendChild(createHTMLElement('h4', 'menuDescription', null, category.description));
-        
     });
 
+    // Insalata
     menuItems['Pizza & Calzones'].forEach((category) => {
-        //create the container
+        // Menu Item container
+        const $menuItemContainer = createHTMLElement('div', 'menuItemContainer', ['insalata']);
+        $insalataContainer.appendChild($menuItemContainer);
 
-        const $menuItemContainer = createHTMLElement('div', 'menuItemContainer', ['antipasti']);
-        $antpastiContainer.appendChild($menuItemContainer);
-
-        // create the title, price, and description
+        // Title
         $menuItemContainer.appendChild(createHTMLElement('h3', 'menuItem', null, category.ID));
 
+        const $subContainer = createHTMLElement('div', 'subContainerInsalata');
+        $menuItemContainer.appendChild($subContainer)
+
+        // Description
+        $subContainer.appendChild(createHTMLElement('h4', 'menuDescription', null, category.description));
+        
+        // Price
+        const $priceContainer = createHTMLElement('div', 'priceContainer')
+        $subContainer.appendChild($priceContainer);
+        
+        $priceContainer.appendChild(createHTMLElement('h4', null, null, 'half'));
+        $priceContainer.appendChild(createHTMLElement('h4', 'halfPrice', null, category['half-price']));
+        $priceContainer.appendChild(createHTMLElement('h4', null, null, 'full'));
+        $priceContainer.appendChild(createHTMLElement('h4', 'fullPrice', null, category['full-price']));
+    });
+
+    // Pizza & Calzones
+    menuItems['Pizza & Calzones'].forEach((category) => {
+        // Menu Item container
+        const $menuItemContainer = createHTMLElement('div', 'menuItemContainer', ['Pizza-Calzones']);
+        $pizzaAndCalzonesContainer.appendChild($menuItemContainer);
+
+        // Title
+        $menuItemContainer.appendChild(createHTMLElement('h3', 'menuItem', null, category.ID));
+
+        const $subContainer = createHTMLElement('div', 'subContainerPizza');
+        $menuItemContainer.appendChild($subContainer)
+
+        // Description
+        $subContainer.appendChild(createHTMLElement('h4', 'menuDescription', null, category.description));
+        
+        // Price
+        const $priceContainer = createHTMLElement('div', 'priceContainer')
+        $subContainer.appendChild($priceContainer);
+        
+        $priceContainer.appendChild(createHTMLElement('h4', null, null, 'half'));
+        $priceContainer.appendChild(createHTMLElement('h4', 'halfPrice', null, category['half-price']));
+        $priceContainer.appendChild(createHTMLElement('h4', null, null, 'full'));
+        $priceContainer.appendChild(createHTMLElement('h4', 'fullPrice', null, category['full-price']));
+    });
+
+    // Antipasti
+    menuItems.Antipasti.forEach((category) => {
+        // Menu item container
+        const $menuItemContainer = createHTMLElement('div', 'menuItemContainer', ['pasta-primi']);
+        $pastaAndPrimiContainer.appendChild($menuItemContainer);
+
+        // Title
+        $menuItemContainer.appendChild(createHTMLElement('h3', 'menuItem', null, category.ID));
+
+        // Price and Description
         const $subContainer = createHTMLElement('div', 'subContainer');
         $menuItemContainer.appendChild($subContainer)
 
         $subContainer.appendChild(createHTMLElement('h4', 'price', null, category.price));
         $subContainer.appendChild(createHTMLElement('h4', 'menuDescription', null, category.description));
-        
     });
 
-    // loop through each object in header
-
-
-
-
-
+    // Attach sections to the main framework
     $menuContainer.appendChild($menu);
     $frame.appendChild($menuContainer);
 }

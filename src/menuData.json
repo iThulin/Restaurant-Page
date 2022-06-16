@@ -41,6 +41,39 @@
             "description": "veggie minestrone, grana padano, fresh parsley"
         }
     ],
+    "Insalata": [
+        {
+            "ID": "CAPRESE",
+            "half-price": 10,
+            "full-price": 15,
+            "description": "fresh mozzarella, fresh tomato, org. basil, aged balsamic, xvoo"
+        },{
+            "ID": "VERDE",
+            "half-price": 8,
+            "full-price": 12,
+            "description": "org. mixed baby greens, candied walnuts, apples, gorgonzola, champagne vinaigrette"
+        },{
+            "ID": "CHOPPED VEGETABLE",
+            "half-price": 12,
+            "full-price": 19,
+            "description": "carrots, cauliflower, cherry tomato, pepperoncini, org. cucumber, org. celery, org, bell peppers, garbanzos, olives, mixed lettuces, red wine vinaigrette"
+        },{
+            "ID": "ORGANIC KALE",
+            "half-price": 9,
+            "full-price": 12,
+            "description": "org. dino kale, org radicchio, marcona almonds, dates, lemon dijon white-balsamic vinaigrette, pecorino romano"
+        },{
+            "ID": "BABY SPINACH",
+            "half-price": 8,
+            "full-price": 12,
+            "description": "org. spinach, sliced mushrooms, shallots, crisp pancetta, chopped egg, balsamic vinaigrette"
+        },{
+            "ID": "CLASSIC CAESAR",
+            "half-price": 8,
+            "full-price": 12,
+            "description": "org romaine lettuce, creamy anchovy dressing, croutons, grated parmesan, anchovy"
+        }
+    ],
     "Pizza & Calzones": [
         {
             "ID": "MARGHERITA",
@@ -87,6 +120,45 @@
             "half-price": 15,
             "full-price": 22,
             "description": "house-made meatballs, marinara, mozzarella, ricotta, org spinach, garlic"
+        }
+    ], 
+    "Pasta & Primi": [
+        {
+            "ID": "ITALIAN MACARONI & CHEESE",
+            "price": 14,
+            "description": "bechamella sauce, pecorino romano, cheddar"
+        },{
+            "ID": "SPAGHETTI & MEATBALLS",
+            "price": 18,
+            "description": "local grass-fed beef, pork, marinara, parmesan"
+        },{
+            "ID": "PENNE ALLA VODKA",
+            "price": 16,
+            "description": "san marzano tomatoes, shallot, vodka, cream, sausage"
+        },{
+            "ID": "RIGATONI ALLA BOLOGNESE",
+            "price": 19,
+            "description": "grass-fed beef, carrots, onion, celery, san marzano tomatoes, parmesan"
+        },{
+            "ID": "LASAGNA AL FORNO",
+            "price": 19,
+            "description": "sauteed spinach, mozzarella, ricotta, marinara"
+        },{
+            "ID": "FETTUCCINE ALFREDO",
+            "price": 14,
+            "description": "butter, cream, grana padana"
+        },{
+            "ID": "CHICKEN PARMESAN",
+            "price": 21,
+            "description": "hand-breaded chicken, mozzarella, marinara, spaghetti"
+        },{
+            "ID": "EGGPLANT PARMESAN NAPOLEON",
+            "price": 19,
+            "description": "breaded fried eggplant, fried tomato, mozzarella, sicilian tomato salsa"
+        },{
+            "ID": "CHICKEN PICATTA",
+            "price": 21,
+            "description": "lemon caper sauce, braised kale, rosemary potatoes"
         }
     ]
 }
