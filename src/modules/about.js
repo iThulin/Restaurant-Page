@@ -6,22 +6,22 @@ function renderAbout() {
     const $about = createHTMLElement('div', 'about');
 
     // Create title and subtitle
-    $about.appendChild(createHTMLElement('h2', null, null, 'VISIT US'));
+    $about.appendChild(createHTMLElement('h2', 'callToAction', null, 'VISIT US'));
 
     const $aboutSubContainer = createHTMLElement('div', 'aboutSubContainer');
     $about.appendChild($aboutSubContainer);
 
     // Location
     const $locationContainer = createHTMLElement('div', 'locationContainer');
-    $about.appendChild($locationContainer);
-    $locationContainer.appendChild(createHTMLElement('h3', 'location', null, 'ALBUQUERQUE, NM'));
+    $aboutSubContainer.appendChild($locationContainer);
+    $locationContainer.appendChild(createHTMLElement('h3', 'location', null, 'ALBUQUERQUE NM'));
     $locationContainer.appendChild(createHTMLElement('h4', 'address', null, '10721 Montgomery Blvd NE'));
     $locationContainer.appendChild(createHTMLElement('h4', 'address', null, 'Albuquerque, NM 87111'));
     $locationContainer.appendChild(createHTMLElement('h4', 'phoneNumber', null, '(505) 298-0035'));
 
     // Hours
     const $hoursContainer = createHTMLElement('div', 'hoursContainer');
-    $about.appendChild($hoursContainer);
+    $aboutSubContainer.appendChild($hoursContainer);
 
     $hoursContainer.appendChild(createHTMLElement('h3', 'hours', null, 'HOURS'));
 
