@@ -1,0 +1,335 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(3fefe681f4c62116679b.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Italic';
+    src: url(87701616ad47257e5b00.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playball';
+    src: url(71988dd7eaaef16a92b6.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Playball';
+    font-weight: 400;
+    font-size: 5rem;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family: 'Raleway-Italic';
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0px;
+}
+
+h3 {
+    font-family: 'Raleway-Italic';
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0px;
+}
+
+h4 {
+    font-family: 'Raleway-Italic';
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0px;
+}
+
+
+p, a {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #E68E24;
+}
+
+p {
+    padding-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px solid #E7E9E6;
+}
+
+a:hover {
+    font-size: 1.25rem;
+    color: white;
+    border-bottom: 2px solid #E68E24;
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#frame {
+    width: 100vw;
+    height: 105vh;
+    min-height: 100vh;
+    background: url(05de6d6fcc8a9daf7c31.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#nav {
+    width: 100%;
+    height: 8vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navButton {
+    font-family: 'Raleway';
+    src: url(3fefe681f4c62116679b.ttf) format('truetype');
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #E68E24;
+    list-style-type: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.navButton:hover {
+    border-bottom: 2px solid #E68E24;
+    color: white
+}
+
+#main {
+    width: 100%;
+    height: 84vh;
+    min-height: 70vh;
+    margin: 0px;
+    background-color: transparent;
+    border-top: 2px solid #FEAE48;
+    border-bottom: 2px solid #FEAE48;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#title {
+    color: #E7E9E6;
+}
+
+#subtitle {
+    color: #E68E24;
+}
+
+#menuContainer, #aboutContainer {
+    width: 100%;
+    height: 84vh;
+    border-top: 2px solid #FEAE48;
+    border-bottom: 2px solid #FEAE48;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu, #about {
+    position: absolute;
+    top: 8vh;
+    width: auto;
+    max-width: 70vw;
+    height: 84vh;
+    background-color: #f3eee5;
+    border-top: 2px solid #FEAE48;
+    border-bottom: 2px solid #FEAE48;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+#about {
+    position: absolute;
+    top: 8vh;
+    width: auto;
+    max-width: 70vw;
+    height: 84vh;
+    background-color: #f3eee5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FEAE48;
+}
+
+#Antipasti, #Insalata, #Pizza-Calzones, #Pasta-Primi {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content:center;
+    flex-flow: row wrap;
+    margin-left: 10px;
+}
+
+#subMenuTitle {
+    align-self: center;
+    margin: 7.5%;
+    font-size: 2.5rem;
+}
+
+#menuItemContainer {
+    width: 30vw;
+    height: 100px;
+    margin: 2.5%;
+}
+
+#subContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#priceContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#price, #halfPrice, #fullPrice {
+    margin: 5px 10px 5px 10px;
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
+#menuDescription {
+    margin-top: 5px;
+}
+
+#aboutSubContainer {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#callToAction {
+    font-family: 'Raleway-Italic';
+    font-weight: 400;
+    font-size: 4rem;
+    margin: 40px 0px 40px 0px;
+}
+
+#locationContainer, #hoursContainer {
+    width: 30vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hours, #location {
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+#hoursSubContainer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#address, #timeRange, #phoneNumber {
+    font-weight: 400;
+    font-size: 1.15rem;
+    margin-top: 5px;
+}
+
+#dayOfWeek {
+    width: 50%;
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-top: 5px;
+}
+
+#map {
+    height: 21.875vw;
+    width: 70vw;
+    background: url(48f691132c37225d6b7a.png);
+    background-size: contain;
+}
+
+#footer {
+    width: 100vw;
+    height: 8vh;
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#attributions {
+    width: 100vw;
+    height: 5vh;
+    position: absolute;
+    bottom: -8vh;
+    background-color: #1D130C;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#container {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*# sourceMappingURL=index.css.map*/
